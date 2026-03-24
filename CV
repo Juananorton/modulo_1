@@ -1,1 +1,173 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using maltacv.cls
+% (May 2020) written by Riccardo Mancini, based on the 
+% AltaCV template by LianTze Lim (liantze@gmail.com).
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
 
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{maltacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the font if you want to
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{lato}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{setspace}
+
+\usepackage{mathpazo}
+\usepackage{textcomp}
+\usepackage{multicol}
+
+% Color schemes:
+% raisinblack_flame
+% darkpurple_princetonorange
+% blue_claret
+% eerieblack_eggplant
+% outerspace_forestgreen   
+% raisinblack_midnightgreen
+% teal_brown
+% indigo
+% blue
+% violet
+% you can set your custom colors with:
+% \definecolor{AccentBody}{HTML}{002642}
+% \definecolor{Primary}{HTML}{840032}
+% \colorlet{primary}{Primary}
+% \colorlet{accent_body}{AccentBody}
+
+% this is my favourite but change it as you like
+\setcolorscheme{raisinblack_flame}
+\setlength\multicolsep{0pt}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+
+%% sample.bib contains your publications
+%% NOT SUPPORTED YET
+% \addbibresource{sample.bib}
+
+\name{Juana Norton}
+\firstname{Juana}
+\familyname{Norton}
+
+\begin{document}
+\tagline{Estudiante de Ingeniería Industrial}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{juanamnorton@gmail.com}
+  % \birthday{25\textsuperscript{th} Dec 0}
+  % \homepage{www.homepage.com/}
+  % \twitter{@twitterhandle}
+  \linkedin{juana-norton}
+  \github{Juananorton}
+  \phone{+54 9 261 3376010}
+  \location{Mendoza, Argentina}
+  % \mailaddress{lorem ipsum, dolor, sit, AM, 57846}
+  % \location{Nowhere, Italy}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+\bio{Estudiante de Ingeniería Industrial con interés en la optimización de procesos, organización y mejora continua. Me considero una persona responsable, proactiva y con facilidad para el trabajo en equipo, orientada a la resolución de problemas en entornos productivos.}
+
+
+\makecvheader
+
+\cvsection{Habilidades}
+\begin{center}
+  \begin{multicols}{5} % adjust #cols as needed
+    \cvlistitem{Excel}{}
+    \cvlistitem{Microsoft Office}{}
+    \cvlistitem{Ingles B2}{}
+    \cvlistitem{Trabajo en equipo}{}
+    \cvlistitem{Organización}{}
+     % \cvlistitem{Another P. lang}{}
+  \end{multicols}
+\end{center}
+
+% put Experience before Education if you are no longer a student
+\cvsection{Educación}
+\medskip
+\begin{multicols}{2}
+
+  \cvuniversity{Ingeniería Industrial}{Universidad Nacional de Cuyo}{2023-En curso}{Mendoza}
+ 
+  \begin{itemize}
+      \item Formación en procesos productivos, gestión y organización industrial.
+      
+  \end{itemize}
+
+  % this helps if columns are not the same
+  \vfill\null
+  \columnbreak
+
+  \cvuniversity{Bachillerato Bilingüe en Humanidades}{Instituto Cuyano de Educación Integral (ICEI)}{finalizado en 2022} {Mendoza}
+ 
+\end{multicols}
+
+\medskip
+\cvsection{Experiencia}
+
+\cvexperience{Pasantía en Producción}{Quesos La Suerte}{Ene 2026 -- Feb 2026}{Lincoln, Buenos Aires}{Procesos productivos, trabajo en planta}
+\begin{itemize}
+    \item Participación en distintas etapas del proceso productivo (elaboración, salado, empaque y maduración).
+  \item Observación del funcionamiento de una planta industrial.
+  \item Apoyo en tareas operativas y control básico de calidad.
+  \item Trabajo en equipo en entorno productivo.
+\end{itemize}
+
+\divider
+
+\cvexperience{Smprendimiento propio}{Aniterie Dulces}{Jul 2020 -- Actualidad}{Mendoza}{Producción, ventas, organización}
+\begin{itemize}
+  \item Producción y comercialización de productos artesanales.
+  \item Organización del proceso productivo (elaboración, envasado y venta).
+  \item Gestión de clientes y estrategias de venta.
+  \item Control de calidad y mejora del producto.
+\end{itemize}
+
+\divider
+
+
+\cvexperience{Voluntariado}{Fundación Manos Abiertas – Hogar Nazaret}{Feb 2024 -- Nov 2025}{Mendoza}{Trabajo en equipo, responsabilidad social}
+\begin{itemize}
+  \item Cuidado de niños y organización de actividades recreativas.
+  \item Apoyo en tareas escolares.
+  \item Generación de un ambiente positivo y de contención.
+\end{itemize}
+
+\medskip
+\cvsection{Idiomas}
+\medskip
+
+\begin{multicols}{2}
+  \cvlistitem{Español}{Nativo}
+  \columnbreak
+  \cvlistitem{Inglés}{Nivel B2}
+\end{multicols}
+\end{document}
